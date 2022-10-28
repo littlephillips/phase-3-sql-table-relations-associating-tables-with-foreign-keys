@@ -1,0 +1,31 @@
+Associate two data tables using a foreign key column
+determine which of the two tables you're associating together will take in a foreign key columnn
+
+lets create a blogging platform
+  :: we'd need a way to store data about different posts, as well as the post's authors.
+          
+  :: In this domain
+you could say that an author has many posts 
+The reciprocal of this would be that a post belongs to an author.
+
+**figure out a way to represent that relationship within the constraints of a relational database
+
+>> one-to-many relationship  i.e one author many posts
+ use foreign key on the table of the record that belongs to a record in the other table
+
+i.e put authors table with a primary key
+    put posts table with a foreign key(author_id) to indicate that it belongs to a particluar author
+
+  visualize this relationships using Entity Relationship Diagram
+
+
+
+
+
+
+
+
+
+
+
+

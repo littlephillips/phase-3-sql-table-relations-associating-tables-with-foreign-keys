@@ -1,0 +1,45 @@
+primary and foreign keys
+
+Create database
+  :: sqlite3 pets_database.db
+
+Create a Table , this case cats
+  :: CREATE TABLE cats (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    age INTEGER,
+    breed TEXT
+  );
+
+Insert/create new data to table
+:: INSERT INTO cats (name, age, breed) VALUES("phillip" 23, "kenyan");
+
+Create another table:  owners
+  :: CREATE TABLE owners (
+   id INTEGER PRIMARY KEY,
+   name Text
+  )
+
+Add foreign keys to Cats table, one to many
+HAS MANY && BELONGS TO
+  :: ALTER TABLE cats ADD COLUMN owner_id INTEGER;
+
+  **Associate cats to their owners
+
+Associating Cats to OWners
+
+Make/create a new owner
+INSERT INTO owners (name) VALUES ("Mugo");
+
+**association mugo owns hana and maru
+UPDATE cats SET owner_id = 1 WHERE name = "Maru";
+UPDATE cats SET owner_id = 1 WHERE name = "Hana";
+
+
+
+
+
+
+
+
+
